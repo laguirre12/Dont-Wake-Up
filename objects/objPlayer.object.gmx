@@ -28,7 +28,7 @@
             <string>/// Constants
 teleportTime = 40;
 teleportTimeRemaining = teleportTime;
-inNightmare = false;
+global.inNightmare = false;
 </string>
           </argument>
         </arguments>
@@ -65,6 +65,16 @@ var kDown = keyboard_check(vk_down) || keyboard_check(ord('S'));
 
 var moveH = kLeft + kRight; 
 var moveV = kUp + kDown;
+
+if (moveH == 1) {
+    sprite_index = sprPlayerRight;
+} else if (moveH == -1) {
+    sprite_index = sprPlayerLeft;
+} else if (moveV == 1) {
+    sprite_index = sprPlayerDown;
+} else if (moveV == -1) {
+    sprite_index = sprPlayerUp;
+}
 
 if (moveH != 0) {
     hMovesRemaining = moveSpeed;
@@ -175,14 +185,14 @@ if (place_meeting(x, y, objTeleporter)) {
 
 if (teleportTimeRemaining == 0) {
     show_debug_message("Teleport");
-    show_debug_message(inNightmare);
-    if (inNightmare) {
+    show_debug_message(global.inNightmare);
+
+    if (global.inNightmare) {
         room_goto(0);
     } else {
         room_goto(1);
     }
-    
-
+    global.inNightmare = !global.inNightmare;
 }
 </string>
           </argument>
