@@ -10,17 +10,27 @@
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprTeleporter</sprite>
     <sprite>sprites\sprCouch</sprite>
+    <sprite>sprites\sprBlock</sprite>
+    <sprite>sprites\sprWallNightmare</sprite>
+    <sprite>sprites\sprTeleporterNightmare</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\objPlayer</object>
+    <object>objects\objWallNightmare</object>
     <object>objects\objWall</object>
-    <object>objects\objTeleporter</object>
     <object>objects\objCouch</object>
+    <object>objects\objBlock</object>
+    <objects name="teleporter">
+      <object>objects\objTeleporterDream</object>
+      <object>objects\objTeleporterNightmare</object>
+      <object>objects\objTeleporter</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm0</room>
+    <room>rooms\Level1_Dream</room>
+    <room>rooms\Level2_Nightmare</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
