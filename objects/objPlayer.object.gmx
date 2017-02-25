@@ -28,6 +28,7 @@
             <string>/// Constants
 teleportTime = 40;
 teleportTimeRemaining = teleportTime;
+global.inNightmare = false;
 
 
 
@@ -202,8 +203,8 @@ if (teleportTimeRemaining &lt;= 0) {
         room_goto(room_next(room));
     }
     
-    x += 50 + teleporter.offsetX;
-    y += 50 + teleporter.offsetY;
+    x = teleporter.x + teleporter.offsetX;
+    y = teleporter.y + teleporter.offsetY;
     
     global.inNightmare = !global.inNightmare;
 }
@@ -242,7 +243,7 @@ if (item) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objWallDreamFront">
+    <event eventtype="4" ename="objWallHorzDream">
       <action>
         <libid>1</libid>
         <id>605</id>

@@ -20,8 +20,24 @@
     </sprites>
     <sprites name="wall">
       <sprite>sprites\sprWall</sprite>
-      <sprite>sprites\sprWallDreamFront</sprite>
-      <sprite>sprites\sprWallNightmareFront</sprite>
+      <sprites name="nightmare">
+        <sprite>sprites\sprWallCorner4Nightmare</sprite>
+        <sprite>sprites\sprWallVertNightmare</sprite>
+        <sprite>sprites\sprWallCrossNightmare</sprite>
+        <sprite>sprites\sprWallCorner3Nightmare</sprite>
+        <sprite>sprites\sprWallCorner2Nightmare</sprite>
+        <sprite>sprites\sprWallCorner1Nightmare</sprite>
+        <sprite>sprites\sprWallHorzNightmare</sprite>
+      </sprites>
+      <sprites name="dream">
+        <sprite>sprites\sprWallCorner4Dream</sprite>
+        <sprite>sprites\sprWallCorner1Dream</sprite>
+        <sprite>sprites\sprWallCorner2Dream</sprite>
+        <sprite>sprites\sprWallCorner3Dream</sprite>
+        <sprite>sprites\sprWallCrossDream</sprite>
+        <sprite>sprites\sprWallVertDream</sprite>
+        <sprite>sprites\sprWallHorzDream</sprite>
+      </sprites>
     </sprites>
     <sprites name="collectibles">
       <sprite>sprites\sprBasketball</sprite>
@@ -56,8 +72,20 @@
     </objects>
     <objects name="wall">
       <object>objects\objWall</object>
-      <object>objects\objWallDreamFront</object>
-      <object>objects\objWallNightmareFront</object>
+      <objects name="nightmare">
+        <object>objects\objWallCrossNightmare</object>
+        <object>objects\objWallHorzNightmare</object>
+        <object>objects\objWallVertNightmare</object>
+      </objects>
+      <objects name="dream">
+        <object>objects\objWallHorzDream</object>
+        <object>objects\objWallVertDream</object>
+        <object>objects\objWallCrossDream</object>
+        <object>objects\objWallCorner1Dream</object>
+        <object>objects\objWallCorner2Dream</object>
+        <object>objects\objWallCorner3Dream</object>
+        <object>objects\objWallCorner4Dream</object>
+      </objects>
     </objects>
     <objects name="collectibles">
       <object>objects\objCollectable</object>
@@ -74,6 +102,9 @@
     <object>objects\objInitNightmare</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Level0_Dream</room>
+    <room>rooms\Level0_Nightmare</room>
+    <room>rooms\Level1_Dream</room>
     <room>rooms\Level1_Nightmare</room>
   </rooms>
   <help>

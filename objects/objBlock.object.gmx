@@ -31,7 +31,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objWallDreamFront">
+    <event eventtype="4" ename="objWallHorzDream">
       <action>
         <libid>1</libid>
         <id>605</id>
