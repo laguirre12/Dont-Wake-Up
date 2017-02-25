@@ -21,6 +21,7 @@
     <sprites name="wall">
       <sprite>sprites\sprWall</sprite>
       <sprite>sprites\sprWallDreamFront</sprite>
+      <sprite>sprites\sprWallNightmareFront</sprite>
     </sprites>
     <sprites name="collectibles">
       <sprite>sprites\sprBasketball</sprite>
@@ -56,6 +57,7 @@
     <objects name="wall">
       <object>objects\objWall</object>
       <object>objects\objWallDreamFront</object>
+      <object>objects\objWallNightmareFront</object>
     </objects>
     <objects name="collectibles">
       <object>objects\objCollectable</object>
@@ -68,10 +70,12 @@
       <object>objects\objAcne</object>
     </objects>
     <object>objects\objDialouge</object>
+    <object>objects\objInitDream</object>
+    <object>objects\objInitNightmare</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1_Dream</room>
-    <room>rooms\Level2_Nightmare</room>
+    <room>rooms\Level1_Nightmare</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
