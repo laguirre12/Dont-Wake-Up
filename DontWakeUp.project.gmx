@@ -27,6 +27,10 @@
         <sprite>sprites\sprWallCorner2Nightmare</sprite>
         <sprite>sprites\sprWallCorner1Nightmare</sprite>
         <sprite>sprites\sprWallHorzNightmare</sprite>
+        <sprite>sprites\sprWallTUpNightmare</sprite>
+        <sprite>sprites\sprWallTDownNightmare</sprite>
+        <sprite>sprites\sprWallTRightNightmare</sprite>
+        <sprite>sprites\sprWallTLeftNightmare</sprite>
       </sprites>
       <sprites name="dream">
         <sprite>sprites\sprWallCorner4Dream</sprite>
@@ -60,6 +64,7 @@
   <backgrounds name="background">
     <background>background\backgroundDream</background>
     <background>background\backgroundNightmare</background>
+    <background>background\DreamBackground2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -83,6 +88,10 @@
         <object>objects\objWallCrossNightmare</object>
         <object>objects\objWallHorzNightmare</object>
         <object>objects\objWallVertNightmare</object>
+        <object>objects\objWallCorner1Nightmare</object>
+        <object>objects\objWallCorner2Nightmare</object>
+        <object>objects\objWallCorner3Nightmare</object>
+        <object>objects\objWallCorner4Nightmare</object>
       </objects>
       <objects name="dream">
         <object>objects\objWallHorzDream</object>
@@ -111,12 +120,12 @@
       <object>objects\objBlock</object>
       <object>objects\objBlockDreamHappy</object>
       <object>objects\objBlockDreamDead</object>
-      <object>objects\objBlockNightmareHappy</object>
       <object>objects\objBlockNightmareDead</object>
     </objects>
     <object>objects\objBed</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Level00_Dream</room>
     <room>rooms\Level0_Dream</room>
     <room>rooms\Level0_Nightmare</room>
     <room>rooms\Level1_Dream</room>

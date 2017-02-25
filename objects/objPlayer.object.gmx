@@ -30,7 +30,8 @@ teleportTime = 40;
 teleportTimeRemaining = teleportTime;
 global.inNightmare = false;
 
-
+canTeleport = true;
+image_speed = 0.25;
 
 </string>
           </argument>
@@ -77,6 +78,8 @@ if (moveH == 1) {
     sprite_index = sprPlayerDown;
 } else if (moveV == -1) {
     sprite_index = sprPlayerUp;
+} else {
+
 }
 phy_speed_x = moveH * moveSpeed;
 phy_speed_y = moveV * moveSpeed;
@@ -185,14 +188,15 @@ if (moveV != 0) {
             <kind>1</kind>
             <string>/// Teleportation
 teleporter = instance_place(x, y, objTeleporter);
-show_debug_message(teleporter);
 
 if (teleporter != noone) {
-    teleportTimeRemaining -= 1;    
+    
+    //teleportTimeRemaining -= 1;    
 } else {
-    teleportTimeRemaining = teleportTime;
+    canTeleport = true;
+    //teleportTimeRemaining = teleportTime;
 }
-
+/*
 if (teleportTimeRemaining &lt;= 0) {
     teleportTimeRemaining = teleportTime;
 
@@ -207,7 +211,7 @@ if (teleportTimeRemaining &lt;= 0) {
     y = teleporter.y + teleporter.offsetY;
     
     global.inNightmare = !global.inNightmare;
-}
+}*/
 </string>
           </argument>
         </arguments>
@@ -313,6 +317,45 @@ if (place_meeting(x, y, objCollectable) {
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="objTeleporter">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Teleportation
+show_debug_message("colliding with teleporter");
+if (canTeleport) {
+    // teleportTimeRemaining = teleportTime;
+    canTeleport = false;
+    
+    if (global.inNightmare) {
+        room_goto(room_previous(room));
+    } else {
+        room_goto(room_next(room));
+    }
+    
+    x = other.x + other.offsetX;
+    y = other.y + other.offsetY;
+    
+    global.inNightmare = !global.inNightmare;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -349,8 +392,8 @@ if (place_meeting(x, y, objCollectable) {
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>16,64</point>
-    <point>88,64</point>
+    <point>16,80</point>
+    <point>88,80</point>
     <point>88,136</point>
     <point>16,136</point>
   </PhysicsShapePoints>
