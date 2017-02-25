@@ -8,7 +8,6 @@
   <sprites name="sprites">
     <sprite>sprites\sprTeleporter</sprite>
     <sprite>sprites\sprCouch</sprite>
-    <sprite>sprites\sprBlock</sprite>
     <sprite>sprites\sprWallNightmare</sprite>
     <sprite>sprites\sprTeleporterNightmare</sprite>
     <sprites name="player">
@@ -48,6 +47,14 @@
       <sprite>sprites\sprPhoto</sprite>
       <sprite>sprites\sprAcne</sprite>
     </sprites>
+    <sprites name="block">
+      <sprite>sprites\sprBlock</sprite>
+      <sprite>sprites\sprBlockDreamHappy</sprite>
+      <sprite>sprites\sprBlockDreamDead</sprite>
+      <sprite>sprites\sprBlockNightmareHappy</sprite>
+      <sprite>sprites\sprBlockNightmareDead</sprite>
+    </sprites>
+    <sprite>sprites\sprite41</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backgroundDream</background>
@@ -64,7 +71,6 @@
     <object>objects\objPlayer</object>
     <object>objects\objWallNightmare</object>
     <object>objects\objCouch</object>
-    <object>objects\objBlock</object>
     <objects name="teleporter">
       <object>objects\objTeleporterDream</object>
       <object>objects\objTeleporterNightmare</object>
@@ -100,6 +106,13 @@
     <object>objects\objDialouge</object>
     <object>objects\objInitDream</object>
     <object>objects\objInitNightmare</object>
+    <objects name="block">
+      <object>objects\objBlock</object>
+      <object>objects\objBlockDreamHappy</object>
+      <object>objects\objBlockDreamDead</object>
+      <object>objects\objBlockNightmareHappy</object>
+      <object>objects\objBlockNightmareDead</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level0_Dream</room>
