@@ -22,12 +22,27 @@
       <sprite>sprites\sprWall</sprite>
       <sprite>sprites\sprWallDreamFront</sprite>
     </sprites>
+    <sprites name="collectibles">
+      <sprite>sprites\sprBasketball</sprite>
+      <sprite>sprites\sprHomework</sprite>
+      <sprite>sprites\sprBook</sprite>
+      <sprite>sprites\sprDiary</sprite>
+      <sprite>sprites\sprFlashcards</sprite>
+      <sprite>sprites\sprPhoto</sprite>
+      <sprite>sprites\sprAcne</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\backgroundDream</background>
     <background>background\backgroundNightmare</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scrCreateDialouge.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fntArial</font>
+  </fonts>
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objWallNightmare</object>
@@ -42,6 +57,17 @@
       <object>objects\objWall</object>
       <object>objects\objWallDreamFront</object>
     </objects>
+    <objects name="collectibles">
+      <object>objects\objCollectable</object>
+      <object>objects\objBaskteball</object>
+      <object>objects\objHomework</object>
+      <object>objects\objBook</object>
+      <object>objects\objDiary</object>
+      <object>objects\objFlashcards</object>
+      <object>objects\objPhoto</object>
+      <object>objects\objAcne</object>
+    </objects>
+    <object>objects\objDialouge</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1_Dream</room>
