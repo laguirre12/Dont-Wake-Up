@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// assign constants
+
 message[0] = "";
 
 // whether we finished drawing all messages
@@ -126,9 +127,14 @@ if (done) {
             <kind>1</kind>
             <string>/// Draw text
 draw_set_font(fntArial);
+
 var message_end = array_length_1d(message);
 
 if (message_end &gt; 0) {
+
+    // text position
+    tx = 100;
+    ty = 200;
       
     // move to next message if available
     if (keyboard_check_pressed(vk_space)) {

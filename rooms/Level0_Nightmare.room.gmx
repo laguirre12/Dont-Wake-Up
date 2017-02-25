@@ -101,6 +101,7 @@
     <instance objName="objWallHorzNightmare" x="1056" y="672" name="inst_F5D8B135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTeleporterNightmare" x="896" y="448" name="inst_6A93C274" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTeleporterNightmare" x="640" y="128" name="inst_CA659722" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBaskteball" x="832" y="160" name="inst_506E06C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
