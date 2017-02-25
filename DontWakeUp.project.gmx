@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprTeleporter</sprite>
     <sprite>sprites\sprCouch</sprite>
     <sprite>sprites\sprBlock</sprite>
@@ -19,6 +18,10 @@
       <sprite>sprites\sprPlayerDown</sprite>
       <sprite>sprites\sprPlayerUp</sprite>
     </sprites>
+    <sprites name="wall">
+      <sprite>sprites\sprWall</sprite>
+      <sprite>sprites\sprWallDreamFront</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\backgroundDream</background>
@@ -28,13 +31,16 @@
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objWallNightmare</object>
-    <object>objects\objWall</object>
     <object>objects\objCouch</object>
     <object>objects\objBlock</object>
     <objects name="teleporter">
       <object>objects\objTeleporterDream</object>
       <object>objects\objTeleporterNightmare</object>
       <object>objects\objTeleporter</object>
+    </objects>
+    <objects name="wall">
+      <object>objects\objWall</object>
+      <object>objects\objWallDreamFront</object>
     </objects>
   </objects>
   <rooms name="rooms">

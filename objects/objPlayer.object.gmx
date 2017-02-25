@@ -29,6 +29,8 @@
 teleportTime = 40;
 teleportTimeRemaining = teleportTime;
 global.inNightmare = false;
+phy_fixed_rotation = true;
+
 </string>
           </argument>
         </arguments>
@@ -56,7 +58,7 @@ global.inNightmare = false;
 //if (global.pause) exit;
 var moveSpeed = 10; 
 var pushModifier = 0.2;
-
+depth = -y;
 // Get input 
 var kLeft = -(keyboard_check(vk_left) || keyboard_check(ord('A'))); 
 var kRight = keyboard_check(vk_right) || keyboard_check(ord('D')); 
@@ -75,7 +77,11 @@ if (moveH == 1) {
 } else if (moveV == -1) {
     sprite_index = sprPlayerUp;
 }
+phy_speed_x = moveH * moveSpeed;
+phy_speed_y = moveV * moveSpeed;
 
+
+/* 
 if (moveH != 0) {
     hMovesRemaining = moveSpeed;
     for (var i = 0; i &lt; hMovesRemaining; i++) {
@@ -154,6 +160,7 @@ if (moveV != 0) {
     
     }
 }
+*/
 
 </string>
           </argument>
@@ -199,17 +206,88 @@ if (teleportTimeRemaining == 0) {
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="objWallDreamFront">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>collision</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objBlock">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>asdf</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objWall">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>collision</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
-  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>0</PhysicsObjectShape>
+  <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
-  <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
+  <PhysicsObjectFriction>0</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>16,64</point>
+    <point>88,64</point>
+    <point>88,136</point>
+    <point>16,136</point>
+  </PhysicsShapePoints>
 </object>
