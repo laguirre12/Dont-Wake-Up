@@ -26,16 +26,57 @@
           <argument>
             <kind>1</kind>
             <string>/// assign constants
+
 message[0] = "";
 
-message_current = 0;
-timer = 0;
-cutoff = 0;
-portrait = "";
-
-t = 0;
-increment = 1;
+// whether we finished drawing all messages
 done = false;
+
+delay = 2;
+
+// string drawing vars
+temp = "";
+index = 0;
+lines = 1;
+charIndex = 0;
+
+current = message[index];
+
+// border dimension vars
+height = 50;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Adds a character to Draw String
+if (string_length(temp) &lt; string_length(current)) {
+    temp += string_char_at(current, charIndex);
+    charIndex++;
+    
+    // removes extra character from beginning
+    if (string_length(temp) == 1 &amp;&amp; charIndex == 1) {
+        temp = string_copy(temp, 1, string_length(temp) - 1);
+    }
+    alarm[0] = delay;
+}
 </string>
           </argument>
         </arguments>
@@ -86,27 +127,42 @@ if (done) {
             <kind>1</kind>
             <string>/// Draw text
 draw_set_font(fntArial);
-draw_set_colour(c_black);
 
 var message_end = array_length_1d(message);
 
 if (message_end &gt; 0) {
-    
-    //text position
-    tX = 100;
-    tY = 200;
-    
+
+    // text position
+    tx = 100;
+    ty = 200;
+      
     // move to next message if available
     if (keyboard_check_pressed(vk_space)) {
-        if (message_current &lt; message_end - 1) {
-            message_current++;
+        if (string_length(temp) != string_length(current)) {
+            temp = current;
+            charIndex = string_length(current);
+        } else if (index &lt; message_end - 1) {
+            charIndex = 0;
+            index++;
+            temp = "";
+            current = message[index];
+            alarm[0] = delay;
         } else {
             done = true;
         }
     }
 
+    // draw border
+    draw_set_color(c_dkgray);
+    var bottom = view_yview[0] + view_hview[0];
+    draw_rectangle(view_xview[0], bottom - height, view_xview[0] + view_wview[0], bottom, false);
+
+    tX = view_xview[0] + 35;
+    tY = bottom - height + height / 2 - 12;
+        
     // draw Text
-    draw_text(tX, tY, message[message_current]);
+    draw_set_color(c_white);
+    draw_text(tX, tY, temp);
 }
 </string>
           </argument>

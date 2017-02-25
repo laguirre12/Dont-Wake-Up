@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// assign constant
 
-message[0] = "They said they weren't aiming for your head.";
+message[0] = "They said they weren\'t aiming for your head.";
 
 /*
 Alt - you can still feel the bump on your head.

@@ -27,7 +27,9 @@
             <kind>1</kind>
             <string>/// assign message value
 
-message[0] = "please don’t let them see page 102. Please don’t let them see page 102. Please don’t let them see page 102.";
+message[0] = "Please don’t let them see page 102."
+message[1] = "Please don’t let them see page 102."
+message[2] = "Please don’t let them see page 102.";
 </string>
           </argument>
         </arguments>
