@@ -183,8 +183,10 @@ if (moveV != 0) {
           <argument>
             <kind>1</kind>
             <string>/// Teleportation
+teleporter = instance_place(x, y, objTeleporter);
+show_debug_message(teleporter);
 
-if (place_meeting(x, y, objTeleporter)) {
+if (teleporter != noone) {
     teleportTimeRemaining -= 1;    
 } else {
     teleportTimeRemaining = teleportTime;
@@ -192,11 +194,6 @@ if (place_meeting(x, y, objTeleporter)) {
 
 if (teleportTimeRemaining &lt;= 0) {
     teleportTimeRemaining = teleportTime;
-    show_debug_message("Teleport");
-    show_debug_message(global.inNightmare);
-    show_debug_message(room);
-    show_debug_message(room_previous(room));
-    show_debug_message(room_next(room));
 
 
     if (global.inNightmare) {
@@ -205,8 +202,8 @@ if (teleportTimeRemaining &lt;= 0) {
         room_goto(room_next(room));
     }
     
-    x += 50;
-    y += 50;
+    x += 50 + teleporter.offsetX;
+    y += 50 + teleporter.offsetY;
     
     global.inNightmare = !global.inNightmare;
 }
