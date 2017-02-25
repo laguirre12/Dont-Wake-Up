@@ -55,6 +55,7 @@
       <sprite>sprites\sprBlockNightmareDead</sprite>
     </sprites>
     <sprite>sprites\sprite41</sprite>
+    <sprite>sprites\sprBed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backgroundDream</background>
@@ -113,6 +114,7 @@
       <object>objects\objBlockNightmareHappy</object>
       <object>objects\objBlockNightmareDead</object>
     </objects>
+    <object>objects\objBed</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level0_Dream</room>
