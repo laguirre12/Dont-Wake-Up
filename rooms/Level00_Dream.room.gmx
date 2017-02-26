@@ -94,7 +94,7 @@
     <instance objName="objWallVertDream" x="1856" y="352" name="inst_F91C6F80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBed" x="1760" y="352" name="inst_DF0EAA32" locked="0" code="" scaleX="0.472222208976746" scaleY="0.576530635356903" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="128" y="320" name="inst_008E525B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bear" x="928" y="352" name="inst_0F6C9A03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBear" x="928" y="352" name="inst_0F6C9A03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallCorner2Dream" x="32" y="256" name="inst_4ECF77DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
