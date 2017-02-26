@@ -31,7 +31,10 @@ teleportTimeRemaining = teleportTime;
 global.inNightmare = false;
 
 
-
+// pause and sound constants
+global.pause = false;
+global.bgSound = 0;
+global.fxSound = 0;
 </string>
           </argument>
         </arguments>
