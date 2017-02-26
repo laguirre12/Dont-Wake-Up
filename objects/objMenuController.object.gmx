@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1000</depth>
+  <depth>-100</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,24 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// assign constants
-message[0] = "";
+            <string>/// assign variables 
 
-// whether we finished drawing all messages
-done = false;
-
-delay = 2;
-
-// string drawing vars
-temp = "";
-index = 0;
-lines = 1;
-charIndex = 0;
-
-current = message[index];
-
-// border dimension vars
-height = 50;
+randomize();
+open = false;
+alarm[0] = 2*room_speed;
 </string>
           </argument>
         </arguments>
@@ -59,23 +46,23 @@ height = 50;
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>objMenuController</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Adds a character to Draw String
-if (string_length(temp) &lt; string_length(current)) {
-    temp += string_char_at(current, charIndex);
-    charIndex++;
-    
-    // removes extra character from beginning
-    if (string_length(temp) == 1 &amp;&amp; charIndex == 1) {
-        temp = string_copy(temp, 1, string_length(temp) - 1);
-    }
-    alarm[0] = delay;
+            <string>/// Change Background to closed eyes
+
+if (open) { // change background to closed eyes
+    background_index[0] = bgStartClosed;
+    alarm[0] = (5 + irandom(5))*room_speed;
+} else { // change background to open eyes
+    background_index[0] = bgStartOpen;
+    alarm[0] = room_speed;
 }
+
+open = !open;
 </string>
           </argument>
         </arguments>
@@ -98,66 +85,10 @@ if (string_length(temp) &lt; string_length(current)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Destroy if all message shown
-if (done) {
-    instance_destroy();
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Draw text
-draw_set_font(fntSmallCrayon);
-var message_end = array_length_1d(message);
+            <string>/// start game
 
-if (message_end &gt; 0) {
-      
-    // move to next message if available
-    if (keyboard_check_pressed(vk_space)) {
-        if (string_length(temp) != string_length(current)) {
-            temp = current;
-            charIndex = string_length(current);
-        } else if (index &lt; message_end - 1) {
-            charIndex = 0;
-            index++;
-            temp = "";
-            current = message[index];
-            alarm[0] = delay;
-        } else {
-            done = true;
-        }
-    }
-
-    // draw border
-    draw_set_color(c_dkgray);
-    var bottom = view_yview[0] + view_hview[0];
-    draw_rectangle(view_xview[0], bottom - height, view_xview[0] + view_wview[0], bottom, false);
-
-    tX = (view_xview[0]*2 + view_wview[0]) / 2;
-    tY = bottom - height + height / 2 - 10;
-        
-    // draw Text
-    draw_set_halign(fa_center);
-    draw_set_color(c_white);
-    draw_text(tX, tY, temp);
+if (keyboard_check_pressed(vk_space)) {
+    room_goto(room_next(room));
 }
 </string>
           </argument>

@@ -9,7 +9,10 @@
     <sprite>sprites\sprTeleporter</sprite>
     <sprite>sprites\sprCouch</sprite>
     <sprite>sprites\sprWallNightmare</sprite>
+    <sprite>sprites\sprite41</sprite>
+    <sprite>sprites\sprBed</sprite>
     <sprite>sprites\sprTeleporterNightmare</sprite>
+    <sprite>sprites\sprEye</sprite>
     <sprites name="player">
       <sprite>sprites\sprPlayer</sprite>
       <sprite>sprites\sprPlayerRight</sprite>
@@ -59,7 +62,6 @@
       <sprite>sprites\sprBlockNightmareDead</sprite>
     </sprites>
     <sprite>sprites\sprite41</sprite>
-    <sprite>sprites\sprBed</sprite>
     <sprites name="bear">
       <sprite>sprites\sprBearLeftDream</sprite>
       <sprite>sprites\sprBearRightDream</sprite>
@@ -70,6 +72,8 @@
     <background>background\backgroundDream</background>
     <background>background\backgroundNightmare</background>
     <background>background\DreamBackground2</background>
+    <background>background\bgStartClosed</background>
+    <background>background\bgStartOpen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -77,10 +81,32 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntArial</font>
+    <font>fonts\fntSmallCrayon</font>
+    <font>fonts\fntCrayon</font>
   </fonts>
   <objects name="objects">
     <object>objects\objPlayer</object>
+    <object>objects\objWallNightmare</object>
+    <object>objects\objBed</object>
     <object>objects\objCouch</object>
+    <object>objects\objDialouge</object>
+    <object>objects\objInitDream</object>
+    <object>objects\objInitNightmare</object>
+    <object>objects\objMenuController</object>
+    <objects name="pauseObjects">
+      <object>objects\objPauseController</object>
+      <object>objects\objSoundEye</object>
+      <object>objects\objExitEye</object>
+      <object>objects\objRestartEye</object>
+      <object>objects\objContinueEye</object>
+    </objects>
+    <objects name="block">
+      <object>objects\objBlock</object>
+      <object>objects\objBlockDreamHappy</object>
+      <object>objects\objBlockDreamDead</object>
+      <object>objects\objBlockNightmareHappy</object>
+      <object>objects\objBlockNightmareDead</object>
+    </objects>
     <objects name="teleporter">
       <object>objects\objTeleporterDream</object>
       <object>objects\objTeleporterNightmare</object>
@@ -127,15 +153,16 @@
       <object>objects\objBlockDreamDead</object>
       <object>objects\objBlockNightmareDead</object>
     </objects>
-    <object>objects\objBed</object>
-    <object>objects\bear</object>
+    <object>objects\objBear</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\mainMenu</room>
     <room>rooms\Level00_Dream</room>
     <room>rooms\Level0_Dream</room>
     <room>rooms\Level0_Nightmare</room>
     <room>rooms\Level1_Dream</room>
     <room>rooms\Level1_Nightmare</room>
+    <room>rooms\rmPause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

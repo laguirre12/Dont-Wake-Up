@@ -34,6 +34,11 @@ canTeleport = true;
 image_speed = 0.25;
 prevPositionsX = ds_queue_create();
 prevPositionsY = ds_queue_create();
+
+// pause and sound constants
+global.pause = false;
+global.bgSound = 0;
+global.fxSound = 0;
 </string>
           </argument>
         </arguments>
