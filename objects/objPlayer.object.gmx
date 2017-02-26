@@ -32,7 +32,8 @@ global.inNightmare = false;
 
 canTeleport = true;
 image_speed = 0.25;
-
+prevPositionsX = ds_queue_create();
+prevPositionsY = ds_queue_create();
 </string>
           </argument>
         </arguments>
@@ -84,6 +85,8 @@ if (moveH == 1) {
 phy_speed_x = moveH * moveSpeed;
 phy_speed_y = moveV * moveSpeed;
 
+ds_queue_enqueue(prevPositionsX, x);
+ds_queue_enqueue(prevPositionsY, y);
 
 /* 
 if (moveH != 0) {
@@ -374,6 +377,7 @@ if (canTeleport) {
           <argument>
             <kind>1</kind>
             <string>phy_fixed_rotation = true;
+prevPositions = ds_list_create();
 </string>
           </argument>
         </arguments>

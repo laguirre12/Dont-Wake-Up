@@ -60,6 +60,11 @@
     </sprites>
     <sprite>sprites\sprite41</sprite>
     <sprite>sprites\sprBed</sprite>
+    <sprites name="bear">
+      <sprite>sprites\sprBearLeftDream</sprite>
+      <sprite>sprites\sprBearRightDream</sprite>
+    </sprites>
+    <sprite>sprites\sprite44</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backgroundDream</background>
@@ -75,7 +80,6 @@
   </fonts>
   <objects name="objects">
     <object>objects\objPlayer</object>
-    <object>objects\objWallNightmare</object>
     <object>objects\objCouch</object>
     <objects name="teleporter">
       <object>objects\objTeleporterDream</object>
@@ -102,6 +106,7 @@
         <object>objects\objWallCorner3Dream</object>
         <object>objects\objWallCorner4Dream</object>
       </objects>
+      <object>objects\objWallNightmare</object>
     </objects>
     <objects name="collectibles">
       <object>objects\objCollectable</object>
@@ -123,6 +128,7 @@
       <object>objects\objBlockNightmareDead</object>
     </objects>
     <object>objects\objBed</object>
+    <object>objects\bear</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level00_Dream</room>
