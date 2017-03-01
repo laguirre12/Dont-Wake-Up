@@ -130,8 +130,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmPause</room>
     <room>rooms\mainMenu</room>
+    <room>rooms\rmPause</room>
     <room>rooms\Level0_Dream</room>
     <room>rooms\Level0_Nightmare</room>
     <room>rooms\Level1_Dream</room>
