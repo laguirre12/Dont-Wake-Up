@@ -30,6 +30,10 @@
         <sprite>sprites\sprWallCorner2Nightmare</sprite>
         <sprite>sprites\sprWallCorner1Nightmare</sprite>
         <sprite>sprites\sprWallHorzNightmare</sprite>
+        <sprite>sprites\sprWallTUpNightmare</sprite>
+        <sprite>sprites\sprWallTDownNightmare</sprite>
+        <sprite>sprites\sprWallTRightNightmare</sprite>
+        <sprite>sprites\sprWallTLeftNightmare</sprite>
       </sprites>
       <sprites name="dream">
         <sprite>sprites\sprWallCorner4Dream</sprite>
@@ -57,10 +61,17 @@
       <sprite>sprites\sprBlockNightmareHappy</sprite>
       <sprite>sprites\sprBlockNightmareDead</sprite>
     </sprites>
+    <sprite>sprites\sprite41</sprite>
+    <sprites name="bear">
+      <sprite>sprites\sprBearLeftDream</sprite>
+      <sprite>sprites\sprBearRightDream</sprite>
+    </sprites>
+    <sprite>sprites\sprite44</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backgroundDream</background>
     <background>background\backgroundNightmare</background>
+    <background>background\DreamBackground2</background>
     <background>background\bgStartClosed</background>
     <background>background\bgStartOpen</background>
   </backgrounds>
@@ -107,6 +118,10 @@
         <object>objects\objWallCrossNightmare</object>
         <object>objects\objWallHorzNightmare</object>
         <object>objects\objWallVertNightmare</object>
+        <object>objects\objWallCorner1Nightmare</object>
+        <object>objects\objWallCorner2Nightmare</object>
+        <object>objects\objWallCorner3Nightmare</object>
+        <object>objects\objWallCorner4Nightmare</object>
       </objects>
       <objects name="dream">
         <object>objects\objWallHorzDream</object>
@@ -117,6 +132,7 @@
         <object>objects\objWallCorner3Dream</object>
         <object>objects\objWallCorner4Dream</object>
       </objects>
+      <object>objects\objWallNightmare</object>
     </objects>
     <objects name="collectibles">
       <object>objects\objCollectable</object>
@@ -128,14 +144,26 @@
       <object>objects\objPhoto</object>
       <object>objects\objAcne</object>
     </objects>
+    <object>objects\objDialouge</object>
+    <object>objects\objInitDream</object>
+    <object>objects\objInitNightmare</object>
+    <objects name="block">
+      <object>objects\objBlock</object>
+      <object>objects\objBlockDreamHappy</object>
+      <object>objects\objBlockDreamDead</object>
+      <object>objects\objBlockNightmareDead</object>
+    </objects>
+    <object>objects\objBear</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
     <room>rooms\rmPause</room>
+    <room>rooms\Level00_Dream</room>
     <room>rooms\Level0_Dream</room>
     <room>rooms\Level0_Nightmare</room>
     <room>rooms\Level1_Dream</room>
     <room>rooms\Level1_Nightmare</room>
+    <room>rooms\rmPause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
