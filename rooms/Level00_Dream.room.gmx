@@ -65,7 +65,7 @@ instance_deactivate_object(objContinueEye);</code>
     <instance objName="objWallHorzDream" x="704" y="256" name="inst_526A5601" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="800" y="256" name="inst_2336BBCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="896" y="256" name="inst_44458FBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallCorner1Dream" x="1856" y="256" name="inst_50CE1426" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallCorner1Dream" x="1856" y="160" name="inst_50CE1426" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallCorner3Dream" x="32" y="448" name="inst_B7E1DB65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertDream" x="32" y="352" name="inst_BA224E36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="128" y="448" name="inst_DE7FCF52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -77,30 +77,34 @@ instance_deactivate_object(objContinueEye);</code>
     <instance objName="objWallHorzDream" x="704" y="448" name="inst_CFACA4BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="800" y="448" name="inst_97E0E04A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="896" y="448" name="inst_841B6958" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallCorner4Dream" x="1856" y="448" name="inst_4A4F1EEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallCorner4Dream" x="1856" y="544" name="inst_4A4F1EEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="992" y="256" name="inst_F23BBBAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1088" y="256" name="inst_B2CEA9E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1184" y="256" name="inst_D4573821" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1280" y="256" name="inst_C3C846CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1376" y="256" name="inst_B3AB99CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1472" y="256" name="inst_8004375A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallHorzDream" x="1568" y="256" name="inst_F9C70DD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallHorzDream" x="1664" y="256" name="inst_0B75B555" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallHorzDream" x="1760" y="256" name="inst_6E5EF11A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallHorzDream" x="1664" y="160" name="inst_0B75B555" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallHorzDream" x="1760" y="160" name="inst_6E5EF11A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="992" y="448" name="inst_D5E2E033" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1088" y="448" name="inst_D4F5402C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1184" y="448" name="inst_9DD5476C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1280" y="448" name="inst_C8CD2498" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1376" y="448" name="inst_CAEAE195" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1472" y="448" name="inst_E73E36E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallHorzDream" x="1568" y="448" name="inst_E7475FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallHorzDream" x="1664" y="448" name="inst_77E1D892" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallHorzDream" x="1760" y="448" name="inst_43568524" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertDream" x="1856" y="352" name="inst_F91C6F80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBed" x="1760" y="352" name="inst_DF0EAA32" locked="0" code="" scaleX="0.472222208976746" scaleY="0.576530635356903" colour="4294967295" rotation="0"/>
+    <instance objName="objWallHorzDream" x="1664" y="544" name="inst_77E1D892" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallHorzDream" x="1760" y="544" name="inst_43568524" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallVertDream" x="1856" y="256" name="inst_F91C6F80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="128" y="320" name="inst_008E525B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBear" x="928" y="352" name="inst_0F6C9A03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBear" x="544" y="352" name="inst_0F6C9A03" locked="0" code="collision_message = &quot;Mr Bear is always there for you&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallCorner2Dream" x="32" y="256" name="inst_4ECF77DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBed" x="1728" y="352" name="inst_5FA42C52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallVertDream" x="1856" y="352" name="inst_424FB3E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallVertDream" x="1856" y="448" name="inst_3BD29940" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallCorner1Dream" x="1568" y="448" name="inst_393E92E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallCorner3Dream" x="1568" y="544" name="inst_23D4AEB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallCorner2Dream" x="1568" y="160" name="inst_60B4D411" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallCorner4Dream" x="1568" y="256" name="inst_5A1B9563" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

@@ -39,6 +39,10 @@ prevPositionsY = ds_queue_create();
 global.pause = false;
 global.bgSound = 3;
 global.fxSound = 3
+
+lastDirection = sprPlayerRightStill;
+bgDreamSound = audio_play_sound(dreamBackgroundSound, 1, true);
+
 </string>
           </argument>
         </arguments>
@@ -69,28 +73,34 @@ if (global.pause) {
     exit;
 }
 
-var moveSpeed = 10; 
+var moveSpeed = 10;
 var pushModifier = 0.2;
 depth = -y;
-// Get input 
-var kLeft = -(keyboard_check(vk_left) || keyboard_check(ord('A'))); 
-var kRight = keyboard_check(vk_right) || keyboard_check(ord('D')); 
+// Get input
+var kLeft = -(keyboard_check(vk_left) || keyboard_check(ord('A')));
+var kRight = keyboard_check(vk_right) || keyboard_check(ord('D'));
 var kUp = -(keyboard_check(vk_up) || keyboard_check(ord('W')));
 var kDown = keyboard_check(vk_down) || keyboard_check(ord('S'));
 
-var moveH = kLeft + kRight; 
+var moveH = kLeft + kRight;
 var moveV = kUp + kDown;
 
 if (moveH == 1) {
     sprite_index = sprPlayerRight;
+    lastDirection = sprPlayerRightStill;
 } else if (moveH == -1) {
     sprite_index = sprPlayerLeft;
+    lastDirection = sprPlayerLeftStill;
+    //lastDirection = 2;
 } else if (moveV == 1) {
     sprite_index = sprPlayerDown;
+    lastDirection = sprPlayerDownStill;
+    //lastDirection = 3;
 } else if (moveV == -1) {
     sprite_index = sprPlayerUp;
+    lastDirection = sprPlayerUpStill;
 } else {
-
+    sprite_index = lastDirection;
 }
 phy_speed_x = moveH * moveSpeed;
 phy_speed_y = moveV * moveSpeed;
@@ -98,7 +108,7 @@ phy_speed_y = moveV * moveSpeed;
 ds_queue_enqueue(prevPositionsX, x);
 ds_queue_enqueue(prevPositionsY, y);
 
-/* 
+/*
 if (moveH != 0) {
     hMovesRemaining = moveSpeed;
     for (var i = 0; i &lt; hMovesRemaining; i++) {
@@ -108,10 +118,10 @@ if (moveH != 0) {
         }
     }
     for (var i = 0; i &lt; floor(hMovesRemaining * pushModifier); i++) {
-        
+
         var col_list = ds_list_create();
         var col = instance_place(x + moveH, y, objBlock);
-        
+
         while col {
             ds_list_add(col_list, col);  //adds the instance ID of col to the list
             instance_deactivate_object(col);    //deactivates the colliding instance, excluding it from further collision detection
@@ -133,7 +143,7 @@ if (moveH != 0) {
             }
         }
 
-        ds_list_destroy(col_list);  //always destroy data structures after you are done using them  
+        ds_list_destroy(col_list);  //always destroy data structures after you are done using them
     }
 }
 
@@ -148,10 +158,10 @@ if (moveV != 0) {
         }
     }
     for (var i = 0; i &lt; floor(vMovesRemaining * pushModifier); i++) {
-    
+
         var col_list = ds_list_create();
         var col = instance_place(x, y + moveV, objBlock);
-        
+
         while col {
             ds_list_add(col_list, col);  //adds the instance ID of col to the list
             instance_deactivate_object(col);    //deactivates the colliding instance, excluding it from further collision detection
@@ -173,8 +183,8 @@ if (moveV != 0) {
             }
         }
 
-        ds_list_destroy(col_list);  //always destroy data structures after you are done using them  
-    
+        ds_list_destroy(col_list);  //always destroy data structures after you are done using them
+
     }
 }
 */
@@ -240,11 +250,11 @@ if (pause) {
     with (objBlockDreamHappy) {
         phy_active = false;
     }
-    
+
     with (objPlayer) {
         phy_active = false;
     }
-    
+
     with (objBear) {
         phy_active = false;
     }
@@ -277,11 +287,26 @@ if (global.pause) exit;
 teleporter = instance_place(x, y, objTeleporter);
 
 if (teleporter != noone) {
-    
-    //teleportTimeRemaining -= 1;    
+
+    //teleportTimeRemaining -= 1;
 } else {
     canTeleport = true;
     //teleportTimeRemaining = teleportTime;
+}
+
+var item = instance_place(x, y, objCollectable);
+if (item) {
+    if (global.inNightmare) {
+        audio_play_sound(pickupNightmareSound, 10, false);
+    } else {
+        audio_play_sound(pickupDreamSound, 10, false);
+    }
+    with (item) {
+        show_debug_message(item.message);
+        scrCreateDialouge(item.message)
+        instance_destroy();
+    }
+
 }
 /*
 if (teleportTimeRemaining &lt;= 0) {
@@ -293,10 +318,10 @@ if (teleportTimeRemaining &lt;= 0) {
     } else {
         room_goto(room_next(room));
     }
-    
+
     x = teleporter.x + teleporter.offsetX;
     y = teleporter.y + teleporter.offsetY;
-    
+
     global.inNightmare = !global.inNightmare;
 }*/
 </string>
@@ -378,20 +403,20 @@ if (canTeleport) {
     // teleportTimeRemaining = teleportTime;
     canTeleport = false;
 
-    // keep track of previous room    
+    // keep track of previous room
     var next = room;
     if (global.inNightmare) {
         next = room_previous(room);
     } else {
         next = room_next(room);
     }
-    
+
     global.currentRoom = next;
     room_goto(next);
-    
+
     x = other.x + other.offsetX;
     y = other.y + other.offsetY;
-    
+
     global.inNightmare = !global.inNightmare;
 }
 </string>

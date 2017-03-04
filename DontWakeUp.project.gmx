@@ -4,7 +4,14 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\winSound</sound>
+    <sound>sound\dreamBackgroundSound</sound>
+    <sound>sound\bearSqueak</sound>
+    <sound>sound\pickupDreamSound</sound>
+    <sound>sound\pickupNightmareSound</sound>
+    <sound>sound\blockMoveSound</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprTeleporter</sprite>
     <sprite>sprites\sprCouch</sprite>
@@ -18,6 +25,10 @@
       <sprite>sprites\sprPlayerLeft</sprite>
       <sprite>sprites\sprPlayerDown</sprite>
       <sprite>sprites\sprPlayerUp</sprite>
+      <sprite>sprites\sprPlayerRightStill</sprite>
+      <sprite>sprites\sprPlayerDownStill</sprite>
+      <sprite>sprites\sprPlayerUpStill</sprite>
+      <sprite>sprites\sprPlayerLeftStill</sprite>
     </sprites>
     <sprites name="wall">
       <sprite>sprites\sprWall</sprite>
@@ -33,6 +44,8 @@
         <sprite>sprites\sprWallTDownNightmare</sprite>
         <sprite>sprites\sprWallTRightNightmare</sprite>
         <sprite>sprites\sprWallTLeftNightmare</sprite>
+        <sprite>sprites\sprWallUpNightmare</sprite>
+        <sprite>sprites\sprWallDownNightmare</sprite>
       </sprites>
       <sprites name="dream">
         <sprite>sprites\sprWallCorner4Dream</sprite>
@@ -42,6 +55,12 @@
         <sprite>sprites\sprWallCrossDream</sprite>
         <sprite>sprites\sprWallVertDream</sprite>
         <sprite>sprites\sprWallHorzDream</sprite>
+        <sprite>sprites\sprWallTDown</sprite>
+        <sprite>sprites\sprWallTUp</sprite>
+        <sprite>sprites\sprWallTRightDream</sprite>
+        <sprite>sprites\sprWallTLeftDream</sprite>
+        <sprite>sprites\sprWallUpDream</sprite>
+        <sprite>sprites\sprWallDownDream</sprite>
       </sprites>
     </sprites>
     <sprites name="collectibles">
@@ -64,8 +83,13 @@
     <sprites name="bear">
       <sprite>sprites\sprBearLeftDream</sprite>
       <sprite>sprites\sprBearRightDream</sprite>
+      <sprite>sprites\sprBearStill</sprite>
+      <sprite>sprites\sprBearLeftNightmare</sprite>
+      <sprite>sprites\sprBearRightNightmare</sprite>
     </sprites>
     <sprite>sprites\sprite44</sprite>
+    <sprite>sprites\sprite48</sprite>
+    <sprite>sprites\sprite49</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backgroundDream</background>
@@ -124,6 +148,12 @@
         <object>objects\objWallCorner2Nightmare</object>
         <object>objects\objWallCorner3Nightmare</object>
         <object>objects\objWallCorner4Nightmare</object>
+        <object>objects\objWallTRightNightmare</object>
+        <object>objects\objWallTLeftNightmare</object>
+        <object>objects\objWallTDownNightmare</object>
+        <object>objects\objWallTUpNightmare</object>
+        <object>objects\objWallUpNightmare</object>
+        <object>objects\objWallDownNightmare</object>
       </objects>
       <objects name="dream">
         <object>objects\objWallHorzDream</object>
@@ -133,6 +163,12 @@
         <object>objects\objWallCorner2Dream</object>
         <object>objects\objWallCorner3Dream</object>
         <object>objects\objWallCorner4Dream</object>
+        <object>objects\objWallTRightDream</object>
+        <object>objects\objWallTLeftDream</object>
+        <object>objects\objWallTDownDream</object>
+        <object>objects\objWallTUpDream</object>
+        <object>objects\objWallUpDream</object>
+        <object>objects\objWallDownDream</object>
       </objects>
       <object>objects\objWallNightmare</object>
     </objects>
@@ -151,10 +187,13 @@
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
     <room>rooms\Level00_Dream</room>
+    <room>rooms\room7</room>
     <room>rooms\Level0_Dream</room>
     <room>rooms\Level0_Nightmare</room>
-    <room>rooms\Level1_Dream</room>
-    <room>rooms\Level1_Nightmare</room>
+    <room>rooms\room2_Dream</room>
+    <room>rooms\room2_Nightmare</room>
+    <room>rooms\Level3_Dream</room>
+    <room>rooms\Level3_Nightmare</room>
     <room>rooms\rmPause</room>
   </rooms>
   <help>
