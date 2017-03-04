@@ -175,6 +175,8 @@
     <room>rooms\room7</room>
     <room>rooms\Level0_Dream</room>
     <room>rooms\Level0_Nightmare</room>
+    <room>rooms\room2_Dream</room>
+    <room>rooms\room2_Nightmare</room>
     <room>rooms\Level3_Dream</room>
     <room>rooms\Level3_Nightmare</room>
     <room>rooms\rmPause</room>
