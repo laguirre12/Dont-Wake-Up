@@ -41,6 +41,8 @@ global.bgSound = 0;
 global.fxSound = 0;
 
 lastDirection = sprPlayerRightStill;
+bgDreamSound = audio_play_sound(dreamBackgroundSound, 1, true);
+
 </string>
           </argument>
         </arguments>
@@ -252,6 +254,11 @@ if (teleportTimeRemaining &lt;= 0) {
 
 var item = instance_place(x, y, objCollectable);
 if (item) {
+    if (global.inNightmare) {
+        audio_play_sound(pickupNightmareSound, 10, false);
+    } else {
+        audio_play_sound(pickupDreamSound, 10, false);
+    }
     with (item) {
         show_debug_message(item.message);
         scrCreateDialouge(item.message)
