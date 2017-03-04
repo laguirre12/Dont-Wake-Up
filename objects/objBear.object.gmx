@@ -52,6 +52,7 @@ collision_message = "Mr Bear is always there for you";
           <argument>
             <kind>1</kind>
             <string>
+if (global.pause) exit;
 var canFollow = false;
 var xFollow;
 var yFollow;
@@ -67,21 +68,20 @@ with (objPlayer) {
     }
 }
 if (canFollow &amp;&amp; following) {
-    if (!global.inNightmare) {        
+    if (!global.inNightmare) {
         if (phy_position_x &gt; xFollow) {
             sprite_index = sprBearLeftDream;
         } else {
             sprite_index = sprBearRightDream;
-        }    
+        }
     } else {
         if (phy_position_x &gt; xFollow) {
             sprite_index = sprBearLeftNightmare;
         } else {
             sprite_index = sprBearRightNightmare;
         }
-    
-    }
 
+    }
     phy_position_x = xFollow;
     phy_position_y = yFollow;
 }
@@ -107,12 +107,36 @@ if (canFollow &amp;&amp; following) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (global.pause) exit;
 if (!following) {
     following = true;
     ray[0] = collision_message;
     scrCreateDialouge(ray);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.pause) exit;
+draw_self();
 </string>
           </argument>
         </arguments>
