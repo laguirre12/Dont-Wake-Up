@@ -46,6 +46,10 @@
         <sprite>sprites\sprWallCrossDream</sprite>
         <sprite>sprites\sprWallVertDream</sprite>
         <sprite>sprites\sprWallHorzDream</sprite>
+        <sprite>sprites\sprWallTDown</sprite>
+        <sprite>sprites\sprWallTUp</sprite>
+        <sprite>sprites\sprWallTRightDream</sprite>
+        <sprite>sprites\sprWallTLeftDream</sprite>
       </sprites>
     </sprites>
     <sprites name="collectibles">
@@ -68,6 +72,9 @@
     <sprites name="bear">
       <sprite>sprites\sprBearLeftDream</sprite>
       <sprite>sprites\sprBearRightDream</sprite>
+      <sprite>sprites\sprBearStill</sprite>
+      <sprite>sprites\sprBearLeftNightmare</sprite>
+      <sprite>sprites\sprBearRightNightmare</sprite>
     </sprites>
     <sprite>sprites\sprite44</sprite>
     <sprite>sprites\sprite48</sprite>
@@ -130,6 +137,10 @@
         <object>objects\objWallCorner2Nightmare</object>
         <object>objects\objWallCorner3Nightmare</object>
         <object>objects\objWallCorner4Nightmare</object>
+        <object>objects\objWallTRightNightmare</object>
+        <object>objects\objWallTLeftNightmare</object>
+        <object>objects\objWallTDownNightmare</object>
+        <object>objects\objWallTUpNightmare</object>
       </objects>
       <objects name="dream">
         <object>objects\objWallHorzDream</object>
@@ -139,6 +150,10 @@
         <object>objects\objWallCorner2Dream</object>
         <object>objects\objWallCorner3Dream</object>
         <object>objects\objWallCorner4Dream</object>
+        <object>objects\objWallTRightDream</object>
+        <object>objects\objWallTLeftDream</object>
+        <object>objects\objWallTDownDream</object>
+        <object>objects\objWallTUpDream</object>
       </objects>
       <object>objects\objWallNightmare</object>
     </objects>
@@ -157,10 +172,11 @@
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
     <room>rooms\Level00_Dream</room>
+    <room>rooms\room7</room>
     <room>rooms\Level0_Dream</room>
     <room>rooms\Level0_Nightmare</room>
-    <room>rooms\Level1_Dream</room>
-    <room>rooms\Level1_Nightmare</room>
+    <room>rooms\Level3_Dream</room>
+    <room>rooms\Level3_Nightmare</room>
     <room>rooms\rmPause</room>
   </rooms>
   <help>

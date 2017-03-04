@@ -49,15 +49,28 @@ targetRoom = Level0_Dream;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(targetRoom);
-with (objPlayer) {
-    instance_destroy();
-}
+            <string>var shouldTeleport = false;
 with (objBear) {
-    instance_destroy();
+    if (following) {
+        shouldTeleport = true;
+    }
 }
-with (objBlock) {
-    instance_destroy();
+
+if (shouldTeleport) {
+    if (global.inNightmare) {
+        room_goto(room + 1);
+    } else {
+        room_goto(room + 2);
+    }
+    with (objPlayer) {
+        instance_destroy();
+    }
+    with (objBear) {
+        instance_destroy();
+    }
+    with (objBlock) {
+        instance_destroy();
+    }
 }
 </string>
           </argument>
