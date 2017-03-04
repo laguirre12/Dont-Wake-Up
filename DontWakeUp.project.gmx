@@ -183,11 +183,13 @@
       <object>objects\objAcne</object>
     </objects>
     <object>objects\objBear</object>
+    <object>objects\objLoadScreen</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
     <room>rooms\Level00_Dream</room>
     <room>rooms\room7</room>
+    <room>rooms\loadScreen</room>
     <room>rooms\Level0_Dream</room>
     <room>rooms\Level0_Nightmare</room>
     <room>rooms\room2_Dream</room>

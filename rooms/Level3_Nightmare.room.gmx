@@ -99,7 +99,6 @@
     <instance objName="objWallHorzNightmare" x="768" y="672" name="inst_F9359EC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzNightmare" x="864" y="672" name="inst_9A000399" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzNightmare" x="960" y="672" name="inst_0DAB5C15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallHorzNightmare" x="1056" y="672" name="inst_198902D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzNightmare" x="960" y="480" name="inst_4EAC1D82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzNightmare" x="864" y="480" name="inst_2432E116" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzNightmare" x="1152" y="864" name="inst_BBBD5C67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -227,14 +226,12 @@
     <instance objName="objWallVertNightmare" x="192" y="576" name="inst_C60092E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="192" y="480" name="inst_298781E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="192" y="384" name="inst_492B0981" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="192" y="288" name="inst_329A6EAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1056" y="96" name="inst_D13A6FFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1056" y="192" name="inst_54FA9334" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="480" y="384" name="inst_05E4EE95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="480" y="480" name="inst_47DB9EC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="480" y="576" name="inst_8113D3F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="672" y="576" name="inst_E53FC74D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="672" y="480" name="inst_CFA8933F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1056" y="576" name="inst_D838F829" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="192" y="768" name="inst_621E9348" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1248" y="768" name="inst_12B38546" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -253,21 +250,18 @@
     <instance objName="objWallVertNightmare" x="672" y="1536" name="inst_C9D9894E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="672" y="1632" name="inst_8C3C4A52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="672" y="1728" name="inst_2BC75204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="864" y="864" name="inst_4B21CD6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="864" y="1344" name="inst_63F7A8C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="864" y="1248" name="inst_83E9F03F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="864" y="1152" name="inst_B94B8658" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="864" y="1056" name="inst_0CE5A684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="864" y="960" name="inst_2EEC1FB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="864" y="1536" name="inst_0BEB97B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="1248" y="960" name="inst_D35DB94B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1056" y="960" name="inst_4C7E8DBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1056" y="1056" name="inst_D13DDD0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1056" y="1152" name="inst_32109FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1056" y="1248" name="inst_D16E55FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1056" y="1344" name="inst_291D8D6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1056" y="1728" name="inst_84610D6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="1248" y="1632" name="inst_DBD817C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1248" y="1728" name="inst_638F7F14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1440" y="96" name="inst_324D309E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1440" y="192" name="inst_B6AB5606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -284,7 +278,6 @@
     <instance objName="objWallVertNightmare" x="1440" y="1536" name="inst_DFB2645F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1440" y="1440" name="inst_4C776A3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1440" y="1344" name="inst_DAF21CCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="1440" y="1248" name="inst_34602FFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1632" y="96" name="inst_DB068BC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1632" y="192" name="inst_82E133CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1632" y="1152" name="inst_3CD5D729" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -299,7 +292,6 @@
     <instance objName="objWallVertNightmare" x="1824" y="1536" name="inst_62AFFA98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1824" y="1440" name="inst_79884555" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="1824" y="1344" name="inst_D219DD97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="1824" y="1248" name="inst_4A0ACA89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="2016" y="576" name="inst_D3580EBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="2016" y="768" name="inst_377DA949" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallCrossNightmare" x="2016" y="672" name="inst_B3B37A22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -313,7 +305,6 @@
     <instance objName="objWallVertNightmare" x="2208" y="960" name="inst_A2AC483B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="2208" y="1056" name="inst_FC1CB968" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="2208" y="1152" name="inst_020DC971" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="2208" y="1248" name="inst_91B0364C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="2400" y="960" name="inst_EDA40A0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="2400" y="1056" name="inst_E5C4B510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="2400" y="1152" name="inst_3043DAA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -334,8 +325,6 @@
     <instance objName="objWallVertNightmare" x="2976" y="1056" name="inst_5208CF0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="2784" y="1248" name="inst_046B837F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="2784" y="1152" name="inst_8E6E0ABD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="2784" y="1056" name="inst_B28BAC22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallVertNightmare" x="2976" y="1536" name="inst_F47025CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallTDownNightmare" x="2976" y="1440" name="inst_AE3133B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallTRightNightmare" x="2400" y="1440" name="inst_B96AA4EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallTLeftNightmare" x="2976" y="672" name="inst_AD037CCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -373,6 +362,24 @@
     <instance objName="objWallVertNightmare" x="3168" y="1536" name="inst_4868F10F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="3168" y="1632" name="inst_CBFB830D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertNightmare" x="3168" y="1728" name="inst_8E061C57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objHomework" x="896" y="160" name="inst_096DFED0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPhoto" x="3072" y="672" name="inst_4F8B4125" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBook" x="2496" y="1536" name="inst_BEE80F97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallTUpNightmare" x="1056" y="672" name="inst_66EBC1E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallDownNightmare" x="1248" y="960" name="inst_DDBA2F4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallDownNightmare" x="2976" y="1536" name="inst_03259E2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallDownNightmare" x="2976" y="1056" name="inst_E50870B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallDownNightmare" x="2208" y="1216" name="inst_C820A097" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallDownNightmare" x="1824" y="864" name="inst_223B1492" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallDownNightmare" x="2016" y="864" name="inst_DFF1ECA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallDownNightmare" x="1632" y="1536" name="inst_6772722B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallUpNightmare" x="192" y="288" name="inst_0E9DAADA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallUpNightmare" x="672" y="480" name="inst_4ECF3A7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallUpNightmare" x="864" y="864" name="inst_C7B7B409" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallUpNightmare" x="1248" y="1632" name="inst_13FF68A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallUpNightmare" x="1824" y="1248" name="inst_E847673F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallUpNightmare" x="1440" y="1248" name="inst_98AC2661" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallUpNightmare" x="2784" y="1056" name="inst_7FB251C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
