@@ -57,6 +57,7 @@ with (objBear) {
 }
 
 if (shouldTeleport) {
+    audio_play_sound(winSound, 1, false);
     if (global.inNightmare) {
         room_goto(room + 1);
     } else {

@@ -107,6 +107,7 @@
     <instance objName="objWallTDownDream" x="1056" y="288" name="inst_5E8F0EFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallHorzDream" x="1056" y="0" name="inst_B943918D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTeleporterDream" x="896" y="416" name="inst_0C551BFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDiary" x="352" y="160" name="inst_71CC9606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
