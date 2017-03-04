@@ -51,8 +51,11 @@ collision_message = "Mr Bear is always there for you";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (global.pause) exit;
+            <string>if (global.pause) {
+    phy_speed_x = 0;
+    phy_speed_y = 0;
+    exit;
+}
 var canFollow = false;
 var xFollow;
 var yFollow;

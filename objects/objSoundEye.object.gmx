@@ -79,6 +79,10 @@ if (horz &lt; 0 &amp;&amp; bg) {
 } else if (horz &gt; 0) {
     global.fxSound = min(6, global.fxSound + 1);
 }
+
+with (objPlayer) {
+    audio_sound_gain(bgDreamSound, global.bgSound / 6.0, 0);
+}
 </string>
           </argument>
         </arguments>
