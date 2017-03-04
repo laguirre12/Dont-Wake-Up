@@ -46,6 +46,8 @@
         <sprite>sprites\sprWallTLeftNightmare</sprite>
         <sprite>sprites\sprWallUpNightmare</sprite>
         <sprite>sprites\sprWallDownNightmare</sprite>
+        <sprite>sprites\sprWallRightNightmare</sprite>
+        <sprite>sprites\sprWallLeftNightmare</sprite>
       </sprites>
       <sprites name="dream">
         <sprite>sprites\sprWallCorner4Dream</sprite>
@@ -61,6 +63,7 @@
         <sprite>sprites\sprWallTLeftDream</sprite>
         <sprite>sprites\sprWallUpDream</sprite>
         <sprite>sprites\sprWallDownDream</sprite>
+        <sprite>sprites\sprWallRightDream</sprite>
       </sprites>
     </sprites>
     <sprites name="collectibles">
@@ -154,6 +157,8 @@
         <object>objects\objWallTUpNightmare</object>
         <object>objects\objWallUpNightmare</object>
         <object>objects\objWallDownNightmare</object>
+        <object>objects\objWallRightNightmare</object>
+        <object>objects\objWallLeftNightmare</object>
       </objects>
       <objects name="dream">
         <object>objects\objWallHorzDream</object>
@@ -169,6 +174,7 @@
         <object>objects\objWallTUpDream</object>
         <object>objects\objWallUpDream</object>
         <object>objects\objWallDownDream</object>
+        <object>objects\objWallRightDream</object>
       </objects>
       <object>objects\objWallNightmare</object>
     </objects>
