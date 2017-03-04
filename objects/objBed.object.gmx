@@ -71,6 +71,9 @@ if (shouldTeleport) {
     with (objBlock) {
         instance_destroy();
     }
+} else {
+    mes[0] = "Cannot enter bed without bear";
+    scrCreateDialouge(mes);
 }
 </string>
           </argument>

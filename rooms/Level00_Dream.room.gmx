@@ -91,7 +91,7 @@
     <instance objName="objWallHorzDream" x="1760" y="544" name="inst_43568524" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertDream" x="1856" y="256" name="inst_F91C6F80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="128" y="320" name="inst_008E525B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBear" x="928" y="352" name="inst_0F6C9A03" locked="0" code="collision_message = &quot;Mr Bear is always there for you&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBear" x="544" y="352" name="inst_0F6C9A03" locked="0" code="collision_message = &quot;Mr Bear is always there for you&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallCorner2Dream" x="32" y="256" name="inst_4ECF77DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBed" x="1728" y="352" name="inst_5FA42C52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertDream" x="1856" y="352" name="inst_424FB3E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
