@@ -42,6 +42,7 @@ global.fxSound = 3
 
 lastDirection = sprPlayerRightStill;
 bgDreamSound = audio_play_sound(dreamBackgroundSound, 1, true);
+audio_sound_gain(bgDreamSound, global.bgSound / 6.0, 0);
 
 </string>
           </argument>
@@ -247,7 +248,7 @@ var pause = keyboard_check_pressed(vk_escape);
 if (pause) {
     global.currentRoom = room;
     global.pause = true;
-    with (objBlockDreamHappy) {
+    with (objBlock) {
         phy_active = false;
     }
 
@@ -258,7 +259,7 @@ if (pause) {
     with (objBear) {
         phy_active = false;
     }
-    room_goto(6);
+    room_goto(rmPause);
 }
 </string>
           </argument>
@@ -297,9 +298,11 @@ if (teleporter != noone) {
 var item = instance_place(x, y, objCollectable);
 if (item) {
     if (global.inNightmare) {
-        audio_play_sound(pickupNightmareSound, 10, false);
+        var snd = audio_play_sound(pickupNightmareSound, 10, false);
+        audio_sound_gain(snd, global.fxSound / 6.0, 0);
     } else {
-        audio_play_sound(pickupDreamSound, 10, false);
+        var snd = audio_play_sound(pickupDreamSound, 10, false);
+        audio_sound_gain(snd, global.fxSound / 6.0, 0);
     }
     with (item) {
         show_debug_message(item.message);

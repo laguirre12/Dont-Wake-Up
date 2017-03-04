@@ -94,7 +94,7 @@ if (up) {
         case 2: show_debug_message("Restart room"); break;
         case 3: 
                 global.pause = false;
-                with (objBlockDreamHappy) {
+                with (objBlock) {
                     phy_active = true;
                 }
                 
