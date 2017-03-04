@@ -91,8 +91,22 @@ if (up) {
         case 0: eyes[current].displayOptions = true;
                 eyes[current].bg = true; break;
         case 1: game_end(); break;
-        case 2: show_debug_message("Restart Room"); break;
-        case 3: show_debug_message("Continue room"); break;
+        case 2: show_debug_message("Restart room"); break;
+        case 3: 
+                global.pause = false;
+                with (objBlockDreamHappy) {
+                    phy_active = true;
+                }
+                
+                with (objPlayer) {
+                    phy_active = true;
+                }
+                
+                with (objBear) {
+                    phy_active = true;
+                }
+                room_goto(global.currentRoom);
+                break;
     }
 }
 
@@ -128,10 +142,15 @@ draw_set_color(c_black);
 draw_set_font(fntPauseTitle);
 draw_set_halign(fa_center);
 
-draw_text(room_width / 2, 125, "Limbo");
+var left = view_xview[0];
+var right = left + view_wview[0];
+var top = view_yview[0];
+var bottom = top + view_hview[0];
+
+draw_text((left + right / 2), 100, "Limbo");
 
 draw_set_font(fntSmallCrayon);
-draw_text(room_width / 2, room_height - 100, "*Use WS to move, "
+draw_text((left + right) / 2, bottom - 100, "*Use WS to move, "
                                     + "Arrow keys for Sound Menu, and Space to select");
 </string>
           </argument>

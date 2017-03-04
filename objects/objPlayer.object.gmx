@@ -37,8 +37,8 @@ prevPositionsY = ds_queue_create();
 
 // pause and sound constants
 global.pause = false;
-global.bgSound = 0;
-global.fxSound = 0;
+global.bgSound = 3;
+global.fxSound = 3
 </string>
           </argument>
         </arguments>
@@ -63,7 +63,12 @@ global.fxSound = 0;
             <kind>1</kind>
             <string>/// Movement
 
-//if (global.pause) exit;
+if (global.pause) {
+    phy_speed_x = 0;
+    phy_speed_y = 0;
+    exit;
+}
+
 var moveSpeed = 10; 
 var pushModifier = 0.2;
 depth = -y;
@@ -194,7 +199,81 @@ if (moveV != 0) {
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// collision with collectable
+
+if (global.pause) exit;
+
+var item = instance_place(x, y, objCollectable);
+if (item) {
+    with (item) {
+        scrCreateDialouge(item.message)
+        instance_destroy();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Pause Menu
+if (global.pause) exit;
+
+var pause = keyboard_check_pressed(vk_escape);
+if (pause) {
+    global.currentRoom = room;
+    global.pause = true;
+    with (objBlockDreamHappy) {
+        phy_active = false;
+    }
+    
+    with (objPlayer) {
+        phy_active = false;
+    }
+    
+    with (objBear) {
+        phy_active = false;
+    }
+    room_goto(6);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Teleportation
+
+if (global.pause) exit;
+
 teleporter = instance_place(x, y, objTeleporter);
 
 if (teleporter != noone) {
@@ -220,36 +299,6 @@ if (teleportTimeRemaining &lt;= 0) {
     
     global.inNightmare = !global.inNightmare;
 }*/
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// collision with collectable
-
-var item = instance_place(x, y, objCollectable);
-if (item) {
-    with (item) {
-        show_debug_message(item.message);
-        scrCreateDialouge(item.message)
-        instance_destroy();
-    }
-}
 </string>
           </argument>
         </arguments>
@@ -321,16 +370,24 @@ if (place_meeting(x, y, objCollectable) {
           <argument>
             <kind>1</kind>
             <string>/// Teleportation
+
+if (global.pause) exit;
+
 show_debug_message("colliding with teleporter");
 if (canTeleport) {
     // teleportTimeRemaining = teleportTime;
     canTeleport = false;
-    
+
+    // keep track of previous room    
+    var next = room;
     if (global.inNightmare) {
-        room_goto(room_previous(room));
+        next = room_previous(room);
     } else {
-        room_goto(room_next(room));
+        next = room_next(room);
     }
+    
+    global.currentRoom = next;
+    room_goto(next);
     
     x = other.x + other.offsetX;
     y = other.y + other.offsetY;
@@ -361,6 +418,31 @@ if (canTeleport) {
             <kind>1</kind>
             <string>phy_fixed_rotation = true;
 prevPositions = ds_list_create();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw self
+if (global.pause) exit;
+draw_self();
 </string>
           </argument>
         </arguments>
