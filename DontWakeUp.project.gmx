@@ -19,6 +19,10 @@
       <sprite>sprites\sprPlayerLeft</sprite>
       <sprite>sprites\sprPlayerDown</sprite>
       <sprite>sprites\sprPlayerUp</sprite>
+      <sprite>sprites\sprPlayerRightStill</sprite>
+      <sprite>sprites\sprPlayerDownStill</sprite>
+      <sprite>sprites\sprPlayerUpStill</sprite>
+      <sprite>sprites\sprPlayerLeftStill</sprite>
     </sprites>
     <sprites name="wall">
       <sprite>sprites\sprWall</sprite>
@@ -67,6 +71,8 @@
       <sprite>sprites\sprBearRightDream</sprite>
     </sprites>
     <sprite>sprites\sprite44</sprite>
+    <sprite>sprites\sprite48</sprite>
+    <sprite>sprites\sprite49</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backgroundDream</background>
