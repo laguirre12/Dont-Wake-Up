@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>4267</width>
-  <height>3200</height>
+  <width>1024</width>
+  <height>767</height>
   <data>images\bgStartOpen.png</data>
 </background>

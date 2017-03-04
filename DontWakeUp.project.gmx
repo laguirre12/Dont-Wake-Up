@@ -9,7 +9,6 @@
     <sprite>sprites\sprTeleporter</sprite>
     <sprite>sprites\sprCouch</sprite>
     <sprite>sprites\sprWallNightmare</sprite>
-    <sprite>sprites\sprite41</sprite>
     <sprite>sprites\sprBed</sprite>
     <sprite>sprites\sprTeleporterNightmare</sprite>
     <sprite>sprites\sprEye</sprite>
@@ -74,19 +73,22 @@
     <background>background\DreamBackground2</background>
     <background>background\bgStartClosed</background>
     <background>background\bgStartOpen</background>
+    <background>background\bgBlank</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrCreateDialouge.gml</script>
+    <script>scripts\scrDrawPauseText.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntArial</font>
     <font>fonts\fntSmallCrayon</font>
     <font>fonts\fntCrayon</font>
+    <font>fonts\fntPauseOption</font>
+    <font>fonts\fntPauseTitle</font>
   </fonts>
   <objects name="objects">
     <object>objects\objPlayer</object>
-    <object>objects\objWallNightmare</object>
     <object>objects\objBed</object>
     <object>objects\objCouch</object>
     <object>objects\objDialouge</object>
@@ -144,26 +146,16 @@
       <object>objects\objPhoto</object>
       <object>objects\objAcne</object>
     </objects>
-    <object>objects\objDialouge</object>
-    <object>objects\objInitDream</object>
-    <object>objects\objInitNightmare</object>
-    <objects name="block">
-      <object>objects\objBlock</object>
-      <object>objects\objBlockDreamHappy</object>
-      <object>objects\objBlockDreamDead</object>
-      <object>objects\objBlockNightmareDead</object>
-    </objects>
     <object>objects\objBear</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\mainMenu</room>
     <room>rooms\rmPause</room>
+    <room>rooms\mainMenu</room>
     <room>rooms\Level00_Dream</room>
     <room>rooms\Level0_Dream</room>
     <room>rooms\Level0_Nightmare</room>
     <room>rooms\Level1_Dream</room>
     <room>rooms\Level1_Nightmare</room>
-    <room>rooms\rmPause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -25,14 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Create variables
+            <string>/// Create Room objects
 
 current = 0;
-blink = .1;
-eyes[0] = instance_create(200, 300, objSoundEye);
-eyes[1] = instance_create(200, 400, objExitEye);
-eyes[2] = instance_create(200, 500, objRestartEye);
-eyes[3] = instance_create(200, 600, objContinueEye);
+blink = .09;
+eyes[0] = instance_create(300, 300, objSoundEye);
+eyes[1] = instance_create(300, 375, objExitEye);
+eyes[2] = instance_create(300, 450, objRestartEye);
+eyes[3] = instance_create(300, 525, objContinueEye);
 
 for (var i = 0; i &lt; 4; i++) {
     eyes[i].image_index = 2;
@@ -72,18 +72,67 @@ var space = keyboard_check_pressed(vk_space);
 if (up) {
     eyes[current].image_speed = 0;
     eyes[current].image_index = 2;
+    eyes[current].active = false;
     
     current = max(current - 1, 0);
+    eyes[current].active = true;
     eyes[current].image_speed = blink;
 } else if (down) {
     eyes[current].image_speed = 0;
     eyes[current].image_index = 2;
+    eyes[current].active = false;
     
     current = min(current + 1, 3);
     eyes[current].image_speed = blink;
+    eyes[current].active = true;
 } else if (space) {
-    // have the current perform an action.
+    // have the current perform an action.  
+    switch (current) {
+        case 0: eyes[current].displayOptions = true;
+                eyes[current].bg = true; break;
+        case 1: game_end(); break;
+        case 2: show_debug_message("Restart Room"); break;
+        case 3: show_debug_message("Continue room"); break;
+    }
 }
+
+// hide sound options
+if (current != 0) {
+    eyes[0].displayOptions = false;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw Pause Title Text &amp; keys
+
+draw_set_color(c_black);
+draw_set_font(fntPauseTitle);
+draw_set_halign(fa_center);
+
+draw_text(room_width / 2, 125, "Limbo");
+
+draw_set_font(fntSmallCrayon);
+draw_text(room_width / 2, room_height - 100, "*Use WS to move, "
+                                    + "Arrow keys for Sound Menu, and Space to select");
 </string>
           </argument>
         </arguments>

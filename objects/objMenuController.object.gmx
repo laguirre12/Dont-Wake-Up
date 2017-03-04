@@ -59,7 +59,7 @@ if (open) { // change background to closed eyes
     alarm[0] = (5 + irandom(5))*room_speed;
 } else { // change background to open eyes
     background_index[0] = bgStartOpen;
-    alarm[0] = room_speed;
+    alarm[0] = room_speed / 2;
 }
 
 open = !open;
