@@ -194,8 +194,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
-    <room>rooms\Level3_Dream</room>
-    <room>rooms\Level3_Nightmare</room>
     <room>rooms\Level00_Dream</room>
     <room>rooms\room7</room>
     <room>rooms\loadScreen</room>
@@ -205,6 +203,8 @@
     <room>rooms\room2_Dream</room>
     <room>rooms\room2_Nightmare</room>
     <room>rooms\room13</room>
+    <room>rooms\Level3_Dream</room>
+    <room>rooms\Level3_Nightmare</room>
     <room>rooms\rmPause</room>
   </rooms>
   <help>
