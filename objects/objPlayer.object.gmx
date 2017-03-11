@@ -214,8 +214,10 @@ if (moveV != 0) {
 
 if (global.pause) exit;
 
+
 var item = instance_place(x, y, objCollectable);
 if (item) {
+    audio_play_sound(pickupNightmareSound, 1, false);
     with (item) {
         scrCreateDialouge(item.message)
         instance_destroy();
